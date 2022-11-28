@@ -11,4 +11,7 @@
     browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
     server-->>browser: [{ content: "", date: "2019-05-23" }, ...]
     Note left of browser: browser executes the event <br> handler that renders notes <br>to display*
+   browser->>server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+   server-->>browser: HTML -code
+   Note left of browser: Response did not return a valid image <br> so the broswer does not get favicon 
 ```
