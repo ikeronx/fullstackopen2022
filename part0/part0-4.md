@@ -3,7 +3,7 @@
  sequenceDiagram
     Note left of browser: *form submit button  clicked* browser <br>  executes the event handler that sends <br> the user input to the server
     browser->>server:  HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
-    Note right of server: HTTP status code 302 <br> (URL redirection)
+    Note right of server: URL redirect <br> (relods page)
     browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
     server-->>browser: HTML-code
     browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
