@@ -7,11 +7,11 @@
     server-->>browser: main.css
     browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
     server-->>browser: spa.js
-    Note left of browser: browser starts executing js-code <br> that requests JSON data from server 
+    Note over browser: browser starts executing js-code <br> that requests JSON data from server 
     browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
     server-->>browser: [{ content: "", date: "2019-05-23" }, ...]
-    Note left of browser: browser executes the event <br> handler that renders notes <br>to display*
+    Note over browser: browser executes the event <br> handler that renders notes <br>to display
    browser->>server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
    server-->>browser: HTML -code
-   Note left of browser: Response did not return a valid image <br> so the broswer does not get favicon 
+   Note over browser: Response did not return a valid image <br> so the broswer does not get favicon 
 ```
